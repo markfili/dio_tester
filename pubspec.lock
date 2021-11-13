@@ -53,10 +53,12 @@ packages:
   dio:
     dependency: "direct main"
     description:
-      name: dio
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "4.0.1"
+      path: dio
+      ref: "70341c0c378db1e3520393168c5a028fc073e721"
+      resolved-ref: "70341c0c378db1e3520393168c5a028fc073e721"
+      url: "https://github.com/markfili/dio.git"
+    source: git
+    version: "4.0.2"
   fake_async:
     dependency: transitive
     description:
