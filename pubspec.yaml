@@ -34,11 +34,7 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
-  dio:
-    git:
-      url: "https://github.com/markfili/dio.git"
-      ref: "70341c0c378db1e3520393168c5a028fc073e721"
-      path: "dio/"
+  dio: ^4.0.1
 
 
 

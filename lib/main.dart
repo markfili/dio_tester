@@ -84,27 +84,35 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Padding(
           padding: const EdgeInsets.all(16.0),
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              const Text("Hello, Ahmed!"),
-              const SizedBox(
-                height: 12.0,
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  const Text("Hello, Ahmed!"),
+                  const SizedBox(
+                    height: 12.0,
+                  ),
+                  ElevatedButton(
+                    onPressed: () async => await _forceError(),
+                    child: const Text("Test try/catching!"),
+                  ),
+                  const SizedBox(
+                    height: 12.0,
+                  ),
+                  ElevatedButton(
+                    onPressed: () async => await _forceErrorWithCatchError(),
+                    child: const Text("Test catchError!"),
+                  ),
+                  const SizedBox(
+                    height: 12.0,
+                  ),
+                ],
               ),
-              ElevatedButton(
-                onPressed: () async => await _forceError(),
-                child: const Text("Test try/catching!"),
-              ),
-              const SizedBox(
-                height: 12.0,
-              ),
-              ElevatedButton(
-                onPressed: () async => await _forceErrorWithCatchError(),
-                child: const Text("Test catchError!"),
-              ),
-              const SizedBox(
-                height: 12.0,
-              ),
-              Text(message)
+              Expanded(
+                child: SingleChildScrollView(
+                  child: Text(message),
+                ),
+              )
             ],
           ),
         ),
